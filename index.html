@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js" defer></script>
+<title>NYT Article Search</title>
+</head>
+<body>
+    <div class="header" id="header"></div>
+    <div class="container">
+      <h5>Search New York Times Articles by Keyword(s)</h5>
+    <form class="form m-3" id="form">
+      <label for="Search"></label>
+      <input type="text" name="search" id="search" placeholder="keyword(s)"></input>
+      <button type="submit" id="submit-button">Search</button>
+    </form>
+
+    <div class="results">
+      <div class="hits mt-3 mb-3" id="ahits"></div>
+      <div class="row h5">
+        <div class="column col-8" name="articleDisplay" id="articleDisplay">
+          <div id="aheadline"></div>
+          <div id="alink"></div>
+        </div>
+      <div class="column col-3">
+        <img class="image " id="image" src="" alt="">
+     </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</body>
+</html>
